@@ -1,0 +1,27 @@
+{
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+    },
+    "terminal.integrated.allowChords": false,
+    "ruby.useBundler": false,
+    "ruby.useLanguageServer": true,
+    "ruby.lint": {
+        "rubocop": {
+            "useBundler": true
+        },
+        "reek": {
+            "useBundler": true
+        }
+    },
+    "ruby.format": "rubocop",
+    "[ruby]": {
+        "editor.formatOnSave": true
+    },
+    "cSpell.ignorePaths": [
+        "**/.git/objects/**",
+        ".devcontainer/",
+        ".vscode/",
+    ],
+    "cSpell.words": [
+    ]
+}
