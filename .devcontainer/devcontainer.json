@@ -23,7 +23,10 @@
 		"--init",
 		"--net=host"
 	],
-	"postStartCommand": "bash -eux .devcontainer/post-start.sh",
+	"containerEnv": {
+		"LOCAL_WORKSPACE": "${localWorkspaceFolder}"
+	},
+	"postCreateCommand": "bash -eux .devcontainer/post-create.sh",
 	"extensions": [
 		"rebornix.ruby",
 		"mosapride.zenkaku",
