@@ -1,8 +1,11 @@
 {
-    "editor.codeActionsOnSave": {
-        "source.organizeImports": true
-    },
     "terminal.integrated.allowChords": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.DS_Store": true,
+        "**/.devcontainer/.extensions": true,
+    },
+    "files.eol": "\n",
     "ruby.useBundler": false,
     "ruby.useLanguageServer": true,
     "ruby.lint": {
@@ -15,12 +18,15 @@
     },
     "ruby.format": "rubocop",
     "[ruby]": {
-        "editor.formatOnSave": true
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports": true
+        }
     },
     "cSpell.ignorePaths": [
         "**/.git/objects/**",
-        ".devcontainer/",
-        ".vscode/",
+        "**/.devcontainer/**",
+        "**/.vscode/**"
     ],
     "cSpell.words": [
     ]
