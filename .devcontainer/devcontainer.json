@@ -6,6 +6,7 @@
 		"dockerfile": "Dockerfile",
 		"context": ".",
 		"args": {
+			"COMPOSE_VERSION": "1.27.4",
 			"MRUBY_VERSION": "2.1.2",
 		},
 		"target": "devcontainer"
@@ -28,8 +29,20 @@
 	},
 	"postCreateCommand": "bash -eux .devcontainer/post-create.sh",
 	"extensions": [
+		"jgclark.vscode-todo-highlight",
 		"rebornix.ruby",
-		"mosapride.zenkaku",
 		"streetsidesoftware.code-spell-checker"
-	]
+	],
+	"settings": {
+		"terminal.integrated.allowChords": false,
+		"files.exclude": {
+			"**/.devcontainer/.extensions": true
+		},
+		"files.watcherExclude": {
+			"**/.devcontainer/.extensions": true
+		},
+		"search.exclude": {
+			"**/.devcontainer/.extensions": true
+		}
+	}
 }
